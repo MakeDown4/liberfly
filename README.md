@@ -12,6 +12,7 @@ O WampServer (Wamp64) é uma opção conveniente para configuração rápida e f
 2. Execute o comando `composer install` para instalar as dependências do Laravel.
 3. Renomeie o arquivo `.env.example` para `.env` e atualize as informações do banco de dados.
 4. Execute o comando `php artisan key:generate` para gerar a chave do aplicativo.
+5. Execute o cmando `php artisan jwt:secret` para gerar o token JWT.
 5. Execute o comando `php artisan migrate` para executar as migrações do banco de dados.
 6. Execute o comando `php artisan db:seed` para popular o banco de dados com dados de teste.
 
