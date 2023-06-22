@@ -1,9 +1,10 @@
 ## Requisitos
 
-Certifique-se de que seu sistema atende aos seguintes requisitos destes arquivos instalados na máquina:
+Recomendo o uso do WampServer (Wamp64), um pacote de software que inclui o PHP e todas as extensões necessárias, além do MySQL e Apache, para simplificar a configuração do projeto. No entanto, certifique-se de que seu sistema atende aos seguintes requisitos mínimos:
 
-- PHP >= 8.1
-- Composer
+PHP >= 8.1
+Composer
+O WampServer (Wamp64) é uma opção conveniente para configuração rápida e fácil do ambiente de desenvolvimento. Ele já possui o PHP na versão adequada e as extensões necessárias para o projeto. Se você optar por usar o WampServer (Wamp64), não será necessário fazer nenhuma configuração adicional relacionada ao PHP e às extensões.
 
 ## Instalação
 
