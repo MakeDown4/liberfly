@@ -1,63 +1,36 @@
-API RESTful - Documentação e Instruções de Execução
-Esta é a documentação e instruções de execução para a API RESTful desenvolvida com PHP e Laravel. Esta API permite fornecer e receber informações de um banco de dados MySQL, usando autenticação JWT para garantir a segurança das solicitações.
+## Requisitos
 
-Pré-requisitos
-Antes de executar o projeto, certifique-se de ter as seguintes dependências instaladas em seu ambiente de desenvolvimento:
+Certifique-se de que seu sistema atende aos seguintes requisitos destes arquivos instalados na máquina:
 
-PHP (versão X.X.X)
-Composer (versão X.X.X)
-MySQL (versão X.X.X)
-Configuração do Projeto
-Siga as etapas abaixo para configurar o projeto:
+- PHP >= 8.1
+- Composer
 
-Faça o download do projeto compactado ou clone o repositório do projeto.
+## Instalação
 
-Navegue até o diretório raiz do projeto.
+1. Faça o download ou clone este repositório.
+2. Execute o comando `composer install` para instalar as dependências do Laravel.
+3. Renomeie o arquivo `.env.example` para `.env` e atualize as informações do banco de dados.
+4. Execute o comando `php artisan key:generate` para gerar a chave do aplicativo.
+5. Execute o comando `php artisan migrate` para executar as migrações do banco de dados.
+6. Execute o comando `php artisan db:seed` para popular o banco de dados com dados de teste.
 
-Renomeie o arquivo .env.example para .env e configure as informações do banco de dados no arquivo .env. Certifique-se de fornecer as credenciais corretas para se conectar ao seu banco de dados MySQL.
+## Execução do projeto
 
-Execute o seguinte comando para instalar as dependências do projeto:
+1. Execute o comando `php artisan serve` para rodar o servidor.
 
-bash
-Copy code
-composer install
-Em seguida, execute o seguinte comando para gerar uma chave de aplicativo:
+## Executando Testes
 
-bash
-Copy code
-php artisan key:generate
-Execute as migrações do banco de dados para criar as tabelas necessárias:
+1. Execute o comando `php artisan test` . Os testes serão executados e os resultados serão exibidos no terminal.
 
-bash
-Copy code
-php artisan migrate
-O projeto está agora configurado e pronto para ser executado.
 
-Executando o Projeto
-Para executar o projeto, siga as etapas abaixo:
+## Documentação da API
 
-No diretório raiz do projeto, execute o seguinte comando para iniciar o servidor local:
-
-bash
-Copy code
-php artisan serve
-O servidor será iniciado e você poderá acessar a API em http://localhost:8000.
-
-Endpoints da API
-A API possui os seguintes endpoints disponíveis:
-
-GET /api/users: Retorna informações de todos os usuários.
-GET /api/users/{id}: Retorna informações de um usuário específico com base em seu ID.
-POST /api/users: Cria um novo usuário com base nos dados fornecidos.
-PUT /api/users/{id}: Atualiza as informações de um usuário específico com base em seu ID.
-DELETE /api/users/{id}: Exclui um usuário específico com base em seu ID.
-Certifique-se de incluir os cabeçalhos de autenticação necessários nas solicitações protegidas, usando o token JWT obtido na autenticação.
-
-Documentação da API
 A API está documentada usando o Swagger. Para acessar a documentação da API, siga estas etapas:
 
-Inicie o servidor local executando o comando php artisan serve.
+Certifique-se de que o servidor local esteja em execução. Caso contrário, execute o comando php artisan serve para iniciar o servidor.
 
-Abra seu navegador e acesse http://localhost:8000/api/documentation.
+Abra seu navegador e acesse o seguinte link:
+
+`http://localhost:8000/api/documentation#/`
 
 A documentação da API será exibida com detalhes sobre cada endpoint, seus parâmetros e exemplos de solicitações e respostas.
